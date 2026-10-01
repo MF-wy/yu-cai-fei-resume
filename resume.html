@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>余采霏的個人簡歷</title>
+
+    <style>
+
+        /* =========================================
+           全部網頁基本設定
+        ========================================= */
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f0f5fc;
+            color: #29466f;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================
+           左側導覽列
+        ========================================= */
+
+        .sidebar {
+            width: 180px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            background: linear-gradient(
+                #dceaff,
+                #edf4ff
+            );
+
+            border-right: 1px solid #c7dcfa;
+
+            padding-top: 40px;
+
+            z-index: 10;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+
+            color: #315c9a;
+
+            font-size: 22px;
+
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+
+            padding: 13px 20px;
+
+            margin: 5px 12px;
+
+            color: #315783;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #c7dcfa;
+
+            transform: translateX(4px);
+        }
+
+        .sidebar .icon {
+            font-size: 20px;
+
+            margin-right: 10px;
+        }
+
+
+        /* =========================================
+           頁面主要內容
+        ========================================= */
+
+        .main {
+            margin-left: 180px;
+        }
+
+
+        /* =========================================
+           首頁橫幅
+           現在改成使用背景圖片
+        ========================================= */
+
+        /* =========================================
+   首頁橫幅
+========================================= */
+
+.hero {
+    min-height: 245px;
+
+    /* 背景圖片 */
+    background-image: url("background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    padding: 35px 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   背景圖片遮罩
+   讓左邊文字更清楚
+========================================= */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    /*
+       左邊比較淡，
+       右邊比較透明。
+
+       這樣文字清楚，
+       又不會把整張背景圖蓋掉。
+    */
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.68) 35%,
+            rgba(255, 255, 255, 0.20) 70%,
+            rgba(255, 255, 255, 0.05) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   首頁文字
+========================================= */
+
+.hero-text {
+
+    position: relative;
+
+    z-index: 3;
+
+    /*
+       加一點半透明白色背景，
+       讓文字更加清楚。
+    */
+
+    background: rgba(255, 255, 255, 0.55);
+
+    padding: 12px 20px;
+
+    border-radius: 15px;
+
+    /*
+       讓文字區域不要太寬
+    */
+
+    max-width: 480px;
+
+    /*
+       微微的陰影
+    */
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   首頁標題
+========================================= */
+
+.hero h1 {
+
+    font-size: 42px;
+
+    color: #24518c;
+
+    margin: 0;
+
+    text-shadow:
+        1px 1px 2px
+        rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   首頁文字
+========================================= */
+
+.hero p {
+
+    font-size: 17px;
+
+    margin: 5px 0;
+
+    color: #29466f;
+
+    font-weight: 500;
+
+    text-shadow:
+        1px 1px 2px
+        rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   首頁周深圖片
+========================================= */
+
+.hero-image {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: -15px;
+
+    height: 240px;
+
+    max-width: 40%;
+
+    object-fit: contain;
+
+    object-position: bottom;
+
+    cursor: pointer;
+
+    z-index: 4;
+}/* =========================================
+   首頁橫幅
+========================================= */
+
+.hero {
+    min-height: 245px;
+
+    /* 背景圖片 */
+    background-image: url("background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    padding: 35px 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   背景圖片遮罩
+   讓左邊文字更清楚
+========================================= */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    /*
+       左邊比較淡，
+       右邊比較透明。
+
+       這樣文字清楚，
+       又不會把整張背景圖蓋掉。
+    */
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.68) 35%,
+            rgba(255, 255, 255, 0.20) 70%,
+            rgba(255, 255, 255, 0.05) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   首頁文字
+========================================= */
+
+.hero-text {
+
+    position: relative;
+
+    z-index: 3;
+
+    /*
+       加一點半透明白色背景，
+       讓文字更加清楚。
+    */
+
+    background: rgba(255, 255, 255, 0.55);
+
+    padding: 12px 20px;
+
+    border-radius: 15px;
+
+    /*
+       讓文字區域不要太寬
+    */
+
+    max-width: 480px;
+
+    /*
+       微微的陰影
+    */
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   首頁標題
+========================================= */
+
+.hero h1 {
+
+    font-size: 42px;
+
+    color: #24518c;
+
+    margin: 0;
+
+    text-shadow:
+        1px 1px 2px
+        rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   首頁文字
+========================================= */
+
+.hero p {
+
+    font-size: 17px;
+
+    margin: 5px 0;
+
+    color: #29466f;
+
+    font-weight: 500;
+
+    text-shadow:
+        1px 1px 2px
+        rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   首頁周深圖片
+========================================= */
+
+.hero-image {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: -15px;
+
+    height: 240px;
+
+    max-width: 40%;
+
+    object-fit: contain;
+
+    object-position: bottom;
+
+    cursor: pointer;
+
+    z-index: 4;
+}
+
+        .hero h1 {
+            font-size: 42px;
+
+            color: #24518c;
+
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 17px;
+
+            margin: 5px 0;
+        }
+
+        .hero-image {
+            position: absolute;
+
+            right: 8%;
+
+            bottom: -15px;
+
+            height: 240px;
+
+            max-width: 40%;
+
+            object-fit: contain;
+
+            object-position: bottom;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           主要內容容器
+        ========================================= */
+
+        .container {
+            max-width: 1200px;
+
+            margin: 25px auto;
+
+            padding: 0 25px;
+        }
+
+
+        /* =========================================
+           卡片區塊
+        ========================================= */
+
+        .card {
+            background-color: #ffffff;
+
+            border: 1px solid #d5e5fa;
+
+            border-radius: 13px;
+
+            padding: 25px;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 3px 12px rgba(
+                    66,
+                    105,
+                    160,
+                    0.08
+                );
+
+            position: relative;
+        }
+
+        .card h2 {
+            font-size: 24px;
+
+            color: #28558e;
+
+            border-bottom: 2px solid #d8e7fc;
+
+            padding-bottom: 10px;
+
+            margin-top: 0;
+        }
+
+        .card h3 {
+            color: #4774ad;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================
+           基本資料與圖片排版
+        ========================================= */
+
+        .profile-layout {
+            display: flex;
+
+            gap: 25px;
+
+            align-items: center;
+        }
+
+        .profile-table {
+            width: 65%;
+
+            border-collapse: collapse;
+        }
+
+        .profile-table th,
+        .profile-table td {
+            border: 1px solid #d7e5f6;
+
+            padding: 9px 12px;
+
+            text-align: left;
+        }
+
+        .profile-table th {
+            background-color: #eaf2ff;
+
+            width: 30%;
+        }
+
+        .profile-decoration {
+            width: 35%;
+
+            text-align: center;
+        }
+
+        .profile-decoration img {
+            width: 100%;
+
+            max-height: 260px;
+
+            object-fit: contain;
+        }
+
+
+        /* =========================================
+           周深圖片
+        ========================================= */
+
+        .zhs-image {
+            max-width: 100%;
+
+            height: auto;
+
+            object-fit: contain;
+
+            display: block;
+
+            margin: 0 auto;
+        }
+
+
+        /* =========================================
+           圖片點擊播放音樂
+        ========================================= */
+
+        .music-image {
+
+            cursor: pointer;
+
+            transition:
+                transform 0.25s ease,
+                filter 0.25s ease;
+        }
+
+
+        /* 滑鼠移到圖片上 */
+        .music-image:hover {
+
+            transform: scale(1.04);
+
+            filter: brightness(1.05);
+        }
+
+
+        /* 正在播放時 */
+        .music-image.playing {
+
+            filter:
+                drop-shadow(
+                    0 0 12px
+                    rgba(
+                        71,
+                        121,
+                        191,
+                        0.55
+                    )
+                );
+        }
+
+
+        /* 首頁圖片 */
+        .hero-image.music-image {
+
+            transition:
+                transform 0.25s ease,
+                filter 0.25s ease;
+        }
+
+        .hero-image.music-image:hover {
+
+            transform: scale(1.04);
+
+            filter: brightness(1.05);
+        }
+
+
+        /* =========================================
+           圖片尺寸
+        ========================================= */
+
+        .small-image {
+            width: 170px;
+
+            max-height: 230px;
+        }
+
+        .medium-image {
+            width: 230px;
+
+            max-height: 300px;
+        }
+
+
+        /* =========================================
+           學歷與興趣雙欄
+        ========================================= */
+
+        .two-columns {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+            align-items: start;
+        }
+
+
+        /* =========================================
+           學歷時間軸
+        ========================================= */
+
+        .education-list {
+
+            list-style: none;
+
+            padding-left: 10px;
+        }
+
+        .education-list li {
+
+            border-left:
+                3px solid #a9c9f3;
+
+            padding:
+                5px 0 15px 20px;
+
+            position: relative;
+        }
+
+        .education-list li::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: -8px;
+
+            top: 15px;
+
+            width: 13px;
+
+            height: 13px;
+
+            background-color: #6595d6;
+
+            border-radius: 50%;
+        }
+
+
+        /* =========================================
+           興趣清單
+        ========================================= */
+
+        .interest-list {
+
+            padding-left: 25px;
+        }
+
+        .interest-list li {
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================
+           自我介紹
+        ========================================= */
+
+        .about-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                1.3fr 1fr;
+
+            gap: 25px;
+
+            align-items: center;
+        }
+
+        .about-box {
+
+            background-color: #f1f6ff;
+
+            border-radius: 12px;
+
+            padding: 18px;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================================
+           周深專欄
+        ========================================= */
+
+        .singer-section {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 25px;
+
+            align-items: center;
+        }
+
+        .singer-picture {
+
+            text-align: center;
+        }
+
+        .singer-picture img {
+
+            max-height: 350px;
+        }
+
+
+        /* =========================================
+           歌曲介紹區
+        ========================================= */
+
+        .song-box {
+
+            background-color: #eef5ff;
+
+            border: 1px solid #d5e5fa;
+
+            border-radius: 12px;
+
+            padding: 20px;
+        }
+
+        .song-box h3 {
+
+            margin-top: 0;
+        }
+
+        .song-list {
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+        .song-list li {
+
+            padding:
+                7px 10px;
+
+            border-bottom:
+                1px solid #d8e7fc;
+        }
+        /* =========================================
+   推薦歌曲播放按鈕
+========================================= */
+
+.song-list li {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.song-button {
+
+    border: 1px solid #4779bf;
+
+    background-color: white;
+
+    color: #28558e;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+}
+
+
+.song-button:hover {
+
+    background-color: #dceaff;
+
+    transform: scale(1.05);
+}
+
+
+/* 正在播放 */
+
+.song-button.playing {
+
+    background-color: #4779bf;
+
+    color: white;
+}
+
+        /* =========================================
+           聯絡表單
+        ========================================= */
+
+        .contact-form {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 15px;
+        }
+
+        .form-group {
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .form-full {
+
+            grid-column:
+                1 / 3;
+        }
+
+        .contact-form label {
+
+            margin-bottom: 5px;
+
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form select,
+        .contact-form textarea {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border:
+                1px solid #c9d9ed;
+
+            border-radius: 7px;
+
+            font-size: 15px;
+
+            font-family: inherit;
+        }
+
+        .contact-form input[type="checkbox"] {
+
+            margin-right: 5px;
+        }
+
+        .contact-form textarea {
+
+            resize: vertical;
+        }
+
+
+        /* =========================================
+           送出按鈕
+        ========================================= */
+
+        .submit-button {
+
+            background-color: #315f9f;
+
+            color: white;
+
+            border: none;
+
+            padding:
+                12px 30px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+        }
+
+        .submit-button:hover {
+
+            background-color: #214879;
+        }
+
+
+        /* =========================================
+           頁尾
+        ========================================= */
+
+        footer {
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #315f9f,
+                    #638ec9
+                );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+
+        /* =========================================
+           手機版排版
+        ========================================= */
+
+        @media (max-width: 800px) {
+
+            .sidebar {
+
+                width: 100%;
+
+                height: auto;
+
+                position: relative;
+
+                padding: 10px;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+            .sidebar h2 {
+
+                width: 100%;
+
+                margin: 5px;
+            }
+
+            .sidebar a {
+
+                padding: 8px;
+
+                margin: 3px;
+            }
+
+            .main {
+
+                margin-left: 0;
+            }
+
+            .hero {
+
+                padding: 25px;
+
+                min-height: 245px;
+            }
+
+            .hero-image {
+
+                right: 0;
+
+                opacity: 0.45;
+
+                max-width: 50%;
+            }
+
+            .two-columns,
+            .singer-section,
+            .about-layout {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .profile-layout {
+
+                flex-direction: column;
+            }
+
+            .profile-table,
+            .profile-decoration {
+
+                width: 100%;
+            }
+
+            .contact-form {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .form-full {
+
+                grid-column: 1;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         左側導覽列
+    ========================================= -->
+
+    <nav class="sidebar">
+
+        <h2>我的簡歷</h2>
+
+        <a href="#home">
+            <span class="icon">⌂</span>
+            首頁
+        </a>
+
+        <a href="#profile">
+            <span class="icon">♙</span>
+            個人資料
+        </a>
+
+        <a href="#education">
+            <span class="icon">♧</span>
+            學歷經歷
+        </a>
+
+        <a href="#skills">
+            <span class="icon">☆</span>
+            興趣專長
+        </a>
+
+        <a href="#about">
+            <span class="icon">▤</span>
+            自我介紹
+        </a>
+
+        <a href="#singer">
+            <span class="icon">♫</span>
+            周深專欄
+        </a>
+
+        <a href="#contact">
+            <span class="icon">✉</span>
+            聯絡表單
+        </a>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         主要網頁內容
+    ========================================= -->
+
+    <main class="main">
+
+
+        <!-- =========================================
+             首頁
+        ========================================= -->
+
+        <header
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-text">
+
+                <h1>
+                    余采霏
+                </h1>
+
+                <p>
+                    國立暨南國際大學 資訊管理學系
+                </p>
+
+                <p>
+                    用程式連結世界，用熱愛創造未來。
+                </p>
+
+            </div>
+
+
+            <!--
+                首頁圖片
+                點擊這張圖片播放 music1.mp3
+            -->
+
+            <img
+                src="zhoushen1.png"
+                alt="周深照片"
+                class="hero-image music-image"
+                data-music="music1.mp3"
+                onclick="toggleImageMusic(this)"
+            >
+
+        </header>
+
+
+
+        <!-- =========================================
+             主要內容
+        ========================================= -->
+
+        <div class="container">
+
+
+            <!-- =========================================
+                 個人基本資料
+            ========================================= -->
+
+            <section
+                class="card"
+                id="profile"
+            >
+
+                <h2>
+                    ♙ 個人基本資料
+                </h2>
+
+
+                <div class="profile-layout">
+
+
+                    <!-- 個人資料表格 -->
+
+                    <table class="profile-table">
+
+                        <tr>
+
+                            <th>
+                                姓名
+                            </th>
+
+                            <td>
+                                余采霏
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th>
+                                學校
+                            </th>
+
+                            <td>
+                                國立暨南國際大學
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th>
+                                科系
+                            </th>
+
+                            <td>
+                                資訊管理學系
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th>
+                                年級
+                            </th>
+
+                            <td>
+                                三年級
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th>
+                                興趣
+                            </th>
+
+                            <td>
+                                游泳、閱讀、旅行、音樂
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th>
+                                喜歡的歌手
+                            </th>
+
+                            <td>
+                                周深
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+
+
+                    <!--
+                        點擊這張圖片播放 music2.mp3
+                    -->
+
+                    <div class="profile-decoration">
+
+                        <img
+                            src="zhoushen2.png"
+                            alt="周深去背照片"
+                            class="music-image zhs-image medium-image"
+                            data-music="music2.mp3"
+                            onclick="toggleImageMusic(this)"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 學歷與興趣
+            ========================================= -->
+
+            <div class="two-columns">
+
+
+                <!-- =====================================
+                     學歷經歷
+                ===================================== -->
+
+                <section
+                    class="card"
+                    id="education"
+                >
+
+                    <h2>
+                        ♧ 學歷經歷
+                    </h2>
+
+
+                    <ol class="education-list">
+
+                        <li>
+                            新竹縣立大同國民小學
+                        </li>
+
+                        <li>
+                            新竹縣立自強國民中學
+                        </li>
+
+                        <li>
+                            國立新竹女子高級中學
+                        </li>
+
+                        <li>
+                            國立暨南國際大學資訊管理學系
+                        </li>
+
+                    </ol>
+
+
+                    <!--
+                        點擊這張圖片播放 music3.mp3
+                    -->
+
+                    <img
+                        src="zhoushen3.png"
+                        alt="周深去背照片"
+                        class="music-image zhs-image small-image"
+                        data-music="music3.mp3"
+                        onclick="toggleImageMusic(this)"
+                    >
+
+                </section>
+
+
+
+                <!-- =====================================
+                     興趣與專長
+                ===================================== -->
+
+                <section
+                    class="card"
+                    id="skills"
+                >
+
+                    <h2>
+                        ☆ 興趣與專長
+                    </h2>
+
+
+                    <h3>
+                        個人興趣
+                    </h3>
+
+                    <ul class="interest-list">
+
+                        <li>
+                            游泳
+                        </li>
+
+                        <li>
+                            閱讀
+                        </li>
+
+                        <li>
+                            旅行
+                        </li>
+
+                        <li>
+                            音樂欣賞
+                        </li>
+
+                    </ul>
+
+
+                    <h3>
+                        專業技能
+                    </h3>
+
+                    <ul class="interest-list">
+
+                        <li>
+                            HTML 網頁設計
+                        </li>
+
+                        <li>
+                            程式設計
+                        </li>
+
+                        <li>
+                            資料庫管理
+                        </li>
+
+                        <li>
+                            文書處理
+                        </li>
+
+                    </ul>
+
+
+                    <!--
+                        點擊這張圖片播放 music4.mp3
+                    -->
+
+                    <img
+                        src="zhoushen4.png"
+                        alt="周深去背照片"
+                        class="music-image zhs-image small-image"
+                        data-music="music4.mp3"
+                        onclick="toggleImageMusic(this)"
+                    >
+
+                </section>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 自我介紹
+            ========================================= -->
+
+            <section
+                class="card"
+                id="about"
+            >
+
+                <h2>
+                    ▤ 自我介紹
+                </h2>
+
+
+                <div class="about-layout">
+
+
+                    <div>
+
+                        <p>
+
+                            我目前就讀於國立暨南國際大學資訊管理學系。
+                            在大學的學習過程中，我逐漸接觸程式設計、
+                            資料庫及資訊管理等相關知識。
+
+                        </p>
+
+
+                        <p>
+
+                            我希望能透過不斷學習與實際練習，
+                            增加自己的專業能力。
+
+                        </p>
+
+
+                        <div class="about-box">
+
+                            <h3>
+                                個人特質
+                            </h3>
+
+                            <p>
+
+                                我是一個具有責任感、喜歡學習新事物的人。
+                                遇到問題時，我會嘗試尋找解決方法，
+                                並從過程中累積經驗。
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="about-box">
+
+                            <h3>
+                                未來目標
+                            </h3>
+
+                            <p>
+
+                                希望未來能將所學的資訊技術應用在實際生活中，
+                                並持續充實自己的知識與技能。
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--
+                        點擊這張圖片播放 music5.mp3
+                    -->
+
+                    <div style="text-align: center;">
+
+                        <img
+                            src="zhoushen5.png"
+                            alt="周深去背照片"
+                            class="music-image zhs-image medium-image"
+                            data-music="music5.mp3"
+                            onclick="toggleImageMusic(this)"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 周深專欄
+            ========================================= -->
+
+            <section
+                class="card"
+                id="singer"
+            >
+
+                <h2>
+                    ♫ 我喜歡的歌手 — 周深
+                </h2>
+
+
+                <div class="singer-section">
+
+
+                    <!-- 左邊圖片 -->
+
+                    <div class="singer-picture">
+
+                        <!--
+                            點擊這張圖片播放 music6.mp3
+                        -->
+
+                        <img
+                            src="zhoushen6.png"
+                            alt="周深去背照片"
+                            class="music-image zhs-image medium-image"
+                            data-music="music6.mp3"
+                            onclick="toggleImageMusic(this)"
+                        >
+
+                    </div>
+
+
+
+                    <!-- 右邊文字 -->
+
+                    <div>
+
+                        <h3>
+                            周深 Zhou Shen
+                        </h3>
+
+
+                        <p>
+
+                            周深是一位以獨特嗓音著稱的華語歌手。
+                            他的歌聲具有細膩且富有感染力的特色，
+                            能夠透過音樂傳達豐富的情感。
+
+                        </p>
+
+
+                        <p>
+
+                            我喜歡聆聽他的歌曲，
+                            也很欣賞他在不同音樂作品中的表現。
+
+                        </p>
+
+
+
+                        <div class="song-box">
+
+                            <h3>
+                                推薦歌曲
+                            </h3>
+
+
+                           <ul class="song-list">
+
+    <li>
+        <span>♫ 大魚</span>
+
+        <button
+            class="song-button"
+            onclick="playSong('music6.mp3', this)"
+        >
+            ▶ 播放
+        </button>
+    </li>
+
+
+    <li>
+        <span>♫ 起風了</span>
+
+        <button
+            class="song-button"
+            onclick="playSong('music1.mp3', this)"
+        >
+            ▶ 播放
+        </button>
+    </li>
+
+
+    <li>
+        <span>♫ 光亮</span>
+
+        <button
+            class="song-button"
+            onclick="playSong('guangliang.mp3', this)"
+        >
+            ▶ 播放
+        </button>
+    </li>
+
+
+    <li>
+        <span>♫ 花開忘憂</span>
+
+        <button
+            class="song-button"
+            onclick="playSong('music4.mp3', this)"
+        >
+            ▶ 播放
+        </button>
+    </li>
+
+
+    <li>
+        <span>♫ 小美滿</span>
+
+        <button
+            class="song-button"
+            onclick="playSong('music2.mp3', this)"
+        >
+            ▶ 播放
+        </button>
+    </li>
+
+</ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 聯絡表單
+            ========================================= -->
+
+            <section
+                class="card"
+                id="contact"
+            >
+
+                <h2>
+                    ✉ 聯絡表單
+                </h2>
+
+
+                <form
+                    class="contact-form"
+                    onsubmit="
+                        alert('表單展示完成！目前尚未連接伺服器。');
+                        return false;
+                    "
+                >
+
+
+                    <!-- 姓名 -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            姓名：
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="請輸入姓名"
+                        >
+
+                    </div>
+
+
+
+                    <!-- 電子郵件 -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            電子郵件：
+                        </label>
+
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="請輸入電子郵件"
+                        >
+
+                    </div>
+
+
+
+                    <!-- 感興趣主題 -->
+
+                    <div class="form-group form-full">
+
+                        <label>
+                            感興趣的主題：
+                        </label>
+
+
+                        <div>
+
+
+                            <input
+                                type="checkbox"
+                                id="programming"
+                                name="interest"
+                                value="程式設計"
+                            >
+
+                            <label for="programming">
+                                程式設計
+                            </label>
+
+
+
+                            <input
+                                type="checkbox"
+                                id="design"
+                                name="interest"
+                                value="網頁設計"
+                            >
+
+                            <label for="design">
+                                網頁設計
+                            </label>
+
+
+
+                            <input
+                                type="checkbox"
+                                id="travel"
+                                name="interest"
+                                value="旅行"
+                            >
+
+                            <label for="travel">
+                                旅行
+                            </label>
+
+
+
+                            <input
+                                type="checkbox"
+                                id="music"
+                                name="interest"
+                                value="音樂"
+                            >
+
+                            <label for="music">
+                                音樂
+                            </label>
+
+
+
+                            <input
+                                type="checkbox"
+                                id="other"
+                                name="interest"
+                                value="其他"
+                            >
+
+                            <label for="other">
+                                其他
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 聯絡目的 -->
+
+                    <div class="form-group">
+
+                        <label for="purpose">
+                            聯絡目的：
+                        </label>
+
+                        <select
+                            id="purpose"
+                            name="purpose"
+                        >
+
+                            <option value="交流">
+                                學術交流
+                            </option>
+
+                            <option value="合作">
+                                專案合作
+                            </option>
+
+                            <option value="其他">
+                                其他
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- 留言 -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            留言：
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="請輸入留言"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- 送出 -->
+
+                    <div
+                        class="form-group form-full"
+                        style="text-align: center;"
+                    >
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            ✈ 送出
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- =========================================
+             頁尾
+        ========================================= -->
+
+        <footer>
+
+            <p>
+                個人簡歷網頁 ｜ 余采霏
+            </p>
+
+            <p>
+                謝謝你來看我的個人簡歷 ♡
+            </p>
+
+        </footer>
+
+    </main>
+
+
+
+    <!-- =========================================
+         圖片點擊播放音樂 JavaScript
+    ========================================= -->
+<script>
+
+    /* =========================================
+       全網站共用的音樂播放器
+    ========================================= */
+
+    let currentAudio = null;
+
+    let currentButton = null;
+
+    let currentImage = null;
+
+
+
+    /* =========================================
+       統一播放音樂
+    ========================================= */
+
+    function startMusic(file, button = null, image = null) {
+
+        /* -----------------------------------------
+           如果點的是「目前正在播放的音樂」
+           → 暫停 / 繼續
+        ----------------------------------------- */
+
+        if (
+            currentAudio &&
+            currentAudio.dataset.file === file
+        ) {
+
+            /* 目前是暫停 → 繼續播放 */
+
+            if (currentAudio.paused) {
+
+                currentAudio.play();
+
+                if (currentButton) {
+
+                    currentButton.textContent =
+                        "Ⅱ 暫停";
+
+                    currentButton.classList.add(
+                        "playing"
+                    );
+                }
+
+                if (currentImage) {
+
+                    currentImage.classList.add(
+                        "playing"
+                    );
+                }
+
+            }
+
+            /* 目前正在播放 → 暫停 */
+
+            else {
+
+                currentAudio.pause();
+
+                if (currentButton) {
+
+                    currentButton.textContent =
+                        "▶ 播放";
+
+                    currentButton.classList.remove(
+                        "playing"
+                    );
+                }
+
+                if (currentImage) {
+
+                    currentImage.classList.remove(
+                        "playing"
+                    );
+                }
+            }
+
+            return;
+        }
+
+
+
+        /* -----------------------------------------
+           如果之前有其他音樂
+           → 先停止
+        ----------------------------------------- */
+
+        if (currentAudio) {
+
+            currentAudio.pause();
+
+            currentAudio.currentTime = 0;
+        }
+
+
+
+        /* -----------------------------------------
+           恢復上一個按鈕
+        ----------------------------------------- */
+
+        if (currentButton) {
+
+            currentButton.textContent =
+                "▶ 播放";
+
+            currentButton.classList.remove(
+                "playing"
+            );
+        }
+
+
+
+        /* -----------------------------------------
+           移除上一張圖片的播放效果
+        ----------------------------------------- */
+
+        if (currentImage) {
+
+            currentImage.classList.remove(
+                "playing"
+            );
+        }
+
+
+
+        /* -----------------------------------------
+           建立新的 Audio
+        ----------------------------------------- */
+
+        currentAudio =
+            new Audio(file);
+
+
+
+        /*
+           把檔名記錄在 Audio 裡
+           方便判斷是不是同一首歌
+        */
+
+        currentAudio.dataset.file = file;
+
+
+
+        /* 記錄目前播放的按鈕 */
+
+        currentButton = button;
+
+
+
+        /* 記錄目前播放的圖片 */
+
+        currentImage = image;
+
+
+
+        /* -----------------------------------------
+           開始播放
+        ----------------------------------------- */
+
+        currentAudio
+            .play()
+            .then(function () {
+
+                /* 如果是按鈕 */
+
+                if (currentButton) {
+
+                    currentButton.textContent =
+                        "Ⅱ 暫停";
+
+                    currentButton.classList.add(
+                        "playing"
+                    );
+                }
+
+
+
+                /* 如果是圖片 */
+
+                if (currentImage) {
+
+                    currentImage.classList.add(
+                        "playing"
+                    );
+                }
+
+            })
+
+            .catch(function (error) {
+
+                console.log(
+                    "音樂播放失敗：",
+                    file,
+                    error
+                );
+
+            });
+
+
+
+        /* -----------------------------------------
+           音樂播放完畢
+        ----------------------------------------- */
+
+        currentAudio.addEventListener(
+            "ended",
+            function () {
+
+                /* 恢復按鈕 */
+
+                if (currentButton) {
+
+                    currentButton.textContent =
+                        "▶ 播放";
+
+                    currentButton.classList.remove(
+                        "playing"
+                    );
+                }
+
+
+
+                /* 移除圖片效果 */
+
+                if (currentImage) {
+
+                    currentImage.classList.remove(
+                        "playing"
+                    );
+                }
+
+
+
+                /* 清空目前播放器 */
+
+                currentAudio = null;
+
+                currentButton = null;
+
+                currentImage = null;
+
+            }
+        );
+
+    }
+
+
+
+    /* =========================================
+       圖片播放音樂
+    ========================================= */
+
+    function toggleImageMusic(image) {
+
+        startMusic(
+            image.dataset.music,
+            null,
+            image
+        );
+
+    }
+
+
+
+    /* =========================================
+       推薦歌曲按鈕播放
+    ========================================= */
+
+    function playSong(songFile, button) {
+
+        startMusic(
+            songFile,
+            button,
+            null
+        );
+
+    }
+
+</script>
+
+   
+
+
+
+    <!-- =========================================
+         檔案使用說明
+
+         HTML 與以下檔案放在同一個資料夾：
+
+         background.jpg
+             ↓
+         首頁背景圖片
+
+         zhoushen1.png
+             ↓
+         music1.mp3
+
+         zhoushen2.png
+             ↓
+         music2.mp3
+
+         zhoushen3.png
+             ↓
+         music3.mp3
+
+         zhoushen4.png
+             ↓
+         music4.mp3
+
+         自我介紹的 zhoushen.png
+             ↓
+         music5.mp3
+
+         周深專欄的 zhoushen.png
+             ↓
+         music6.mp3
+
+    ========================================= -->
+
+</body>
+
+</html>
